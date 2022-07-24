@@ -1,0 +1,43 @@
+---
+import Img from "../img/avatar.png"
+---
+
+<section class="container mx-auto p-10 lg:p-0 lg:pt-20 lg:pb-20">
+    <div class="grid grid-cols-4 gap-10">
+        <div class="col-span-4 lg:col-span-3 flex flex-col text-white">
+            <h1 class="text-5xl lg:text-9xl text-zinc-500">
+                MANUEL ERAZO.</h1>
+            <span class="text-xl lg:text-3xl uppercase tracking-widest">FULLSTACK DEVELOPER /
+                Designer</span>
+            <br />
+            <h2 class="leading-relaxed text-sm lg:text-2xl">Hi, I'm a web developer with 2 years of experience. A
+                passionate Full Stack Software Developer having an experience of building Web applications with Django /
+                React and some other cool libraries and frameworks.</h2>
+            <br />
+            <h2 class="leading-relaxed text-sm lg:text-2xl">In my spare time I like to do small projects, one of my
+                hobbies is
+                testing Linux distributions, playing retro games and watch anime.</h2>
+            <div class="flex gap-5 pt-4">
+                <a class="nes-btn pl-5 pr-5" href="#about">More about me...</a>
+                <a class="nes-btn pl-5 pr-5" href="#contact">Contact me</a>
+            </div>
+        </div>
+        <div class="col-span-4 lg:col-span-1 ">
+            <div class="border-4 border-zinc-100">
+                <img src={Img} class="w-96" />
+            </div>
+            <div class="text-white pt-2">
+                <span>Statistics:</span><br />
+                <div class="lists pl-6">
+                    <ul class="nes-list is-disc">
+                        <li>Man</li>
+                        <li>20 years of life</li>
+                        <li>Freelancer</li>
+                        <li>Colombian</li>
+                        <li>Student</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

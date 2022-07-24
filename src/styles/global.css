@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url('../fonts/Minecraft.ttf') format('truetype');
+}
+
+html, body, pre, code, kbd, samp {
+  font-family: "Minecraft" !important;
+}
+
+input, select, textarea {
+  border: none;
+  outline: none;
+  color: gray;
+}
+
+/* placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: gray;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.nes-list.is-disc li::before {
+  color: #fff !important;
+}
+
+.title{
+  font-size: 1.2em !important;
+}
+/* media */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1em !important;
+  }
+}

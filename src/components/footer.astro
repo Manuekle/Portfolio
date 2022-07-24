@@ -1,0 +1,61 @@
+---
+import Img from "../img/pc.png"
+import Form from "./FormComponent.jsx"
+---
+
+<footer class="lg:mt-36" id="contact">
+    <div class='container mx-auto p-10 lg:p-0 lg:pt-20 lg:pb-20'>
+        <div class="grid grid-cols-3 lg:p-10 lg:pr-20 lg:pl-20">
+            <div class="p-4 col-span-3 lg:col-span-1 text-white">
+                <span class="text-2xl capitalize flex justify-center text-center">do you have a project in mind contact
+                    me.</span>
+                <br />
+                <div class="flex justify-center text-center">
+                    <div class="flex flex-row gap-4">
+                        <a href="https://github.com/Manuekle" target="_blank">
+                            <i class="nes-icon github is-medium"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/manuel-esteban-erazo-medina-686a69226/" target="_blank">
+                            <i class="nes-icon linkedin is-medium"></i>
+                        </a>
+                        <a href="https://twitter.com/Manu3L3l" target="_blank">
+                            <i class="nes-icon twitter is-medium"></i>
+                        </a>
+                        <a href="https://www.facebook.com/manu3l.3razo/" target="_blank">
+                            <i class="nes-icon facebook is-medium"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="justify-center flex">
+                    <img src={Img} class="w-60" />
+                </div>
+            </div>
+            <div class="p-4 col-span-3 lg:col-span-2 text-white">
+                <h1 class="uppercase text-lg lg:text-5xl">send me your information!</h1>
+                <Form client:load />
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="pt-10 flex flex-col pb-10 bg-zinc-700">
+    <div class="flex justify-center">
+        <img src="https://preview.redd.it/a7cm878ps5t41.png?width=640&crop=smart&auto=webp&s=060968e347b0f5951f432c7141fd5f466f0e8b1a"
+            class="w-16" />
+
+    </div>
+    <br />
+    <div class="flex justify-center text-white ">
+        <h1 class="uppercase text-lg lg:text-4xl">
+            old school is cool
+        </h1>
+    </div>
+    <span class="flex flex-row gap-2 items-center justify-center text-white">
+        <i class="nes-icon is-small heart"></i>By Manuel
+    </span>
+    <div class="flex justify-end">
+        <a href="#">
+            <img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/da97a039f330056.png"
+                class="w-16 transition ease-out delay-10 hover:-translate-y-1 hover:scale-120 duration-300" />
+        </a>
+    </div>
+</div>

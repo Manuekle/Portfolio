@@ -1,0 +1,42 @@
+---
+import "../styles/index.css";
+import "../../node_modules/nes.css/css/nes.css";
+
+const { site } = Astro;
+const description = "My personal website";
+---
+
+<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="root">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="/favicon.ico" sizes="any" />
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+	<title>Manuel|Portfolio</title>
+	<meta name="description" content={description} />
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" media="print"
+		onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" />
+	</noscript>
+
+	<!-- social media -->
+	<meta property="og:title" content="Astro" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content={description} />
+	<!-- <meta property="og:image" content={image} /> -->
+	<meta property="og:url" content={site} />
+	<meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<body class="bg-zinc-800">	
+	<slot></slot>
+</body>
+
+</html>
